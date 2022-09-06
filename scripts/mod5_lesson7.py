@@ -34,3 +34,13 @@ class Tests(unittest.TestCase):
         sleep(2)
         self.driver.switch_to.window(window_after)
         sleep(2)
+
+    def test4(self):
+        self.driver.set_window_size(200, 200)
+        sleep(2)
+        self.driver.minimize_window()
+        sleep(2)
+        self.driver.maximize_window()
+        sleep(2)
+        self.driver.set_window_position(500, 500)
+        sleep(2)
