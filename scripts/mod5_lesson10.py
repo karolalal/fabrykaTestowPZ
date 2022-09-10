@@ -19,7 +19,7 @@ class Tests(unittest.TestCase):
         checkbox = self.driver.find_element(By.XPATH, "//div[@id='checkbox-content']//input[2]")
         checkbox.click()
         sleep(2)
-        checkbox.screenshot('.\\screenshot_checkbox.png')
+        #checkbox.screenshot('.\\screenshot_checkbox.png')
         self.driver.save_screenshot('.\\screenshot.png')
 
 
