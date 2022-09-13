@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 
 driver.get('https://www.google.pl')
+button = driver.find_element(By.XPATH, '//*[@id="L2AGLb"]/div').click()
 
 search_box = driver.find_element(By.NAME, 'q')
 
